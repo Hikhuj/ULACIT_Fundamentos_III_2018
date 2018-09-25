@@ -16,13 +16,15 @@ public class Taller2 {
      */
     
     public static void main(String[] args) {
-        // TODO code application logic here
         
-        // Call to class
-        HojaDeCalculos claseFinanciera = new HojaDeCalculos();
-        
+        // Inicializar y declara variable con un monto de prueba.
         int monto = 54000;
         
+        // Se crea un objeto de tipo HojaDeCalculos, que contiene el metodo requirido por el ejercicio.
+        // Calcula(float){}
+        HojaDeCalculos claseFinanciera = new HojaDeCalculos();
+        
+        // Se hace llamado del metodo de la clase, enviandole por parametro el monto que se quiere calcular.
         claseFinanciera.Calcula(monto);
         
     }
