@@ -11,6 +11,8 @@ package taller2;
  */
 public class HojaDeCalculos {
     
+    
+    
     public void Calcula(float cantidad){
         
         float resultado = 0.0f;
@@ -18,9 +20,11 @@ public class HojaDeCalculos {
         float porcentajeInteres = 0.08f;
         
         interesGanado = cantidad * porcentajeInteres;
-        resultado = cantidad + interesGanado;
+        resultado = cantidad - interesGanado;
         
-        System.out.print("");
+        System.out.println("*---------------------------------------------------------------*");
+        System.out.println("Si desea obtener ₡" + cantidad + ", debera invertir ₡" + resultado);
+        System.out.println("*---------------------------------------------------------------*");
         
         
     }

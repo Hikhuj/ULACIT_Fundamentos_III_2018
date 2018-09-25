@@ -18,7 +18,12 @@ public class Taller2 {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        // Call to class
+        HojaDeCalculos claseFinanciera = new HojaDeCalculos();
         
+        int monto = 54000;
+        
+        claseFinanciera.Calcula(monto);
         
     }
     
