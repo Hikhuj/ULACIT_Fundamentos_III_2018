@@ -15,7 +15,7 @@ public class Backend {
  
     public void menu() {
         
-        int opc = demeNumero("Que desea hacer:\n1. Cantidad de Flores\n2. Tipo de triangulo");
+        int opc = demeNumero("Que desea hacer:\n1. Cantidad de Flores\n2. Tipo de triangulo\n3. Magnitud de sismo");
         
         switch(opc) {
             case 1:
@@ -23,6 +23,9 @@ public class Backend {
                 break;
             case 2:
                 llamarTipoTriangulo();
+                break;
+            case 3:
+                llamarMagnitudDeTemblor();
                 break;
             default:
                 System.exit(1);
@@ -33,6 +36,12 @@ public class Backend {
     public int demeNumero(String msj) {
         String texto = JOptionPane.showInputDialog(msj);
         int numero = Integer.parseInt(texto);
+        return numero;
+    }
+    
+    public float demeNumero2(String msj) {
+        String texto = JOptionPane.showInputDialog(msj);
+        float numero = Float.parseFloat(texto);
         return numero;
     }
     
@@ -96,5 +105,49 @@ public class Backend {
         }
         
     }
+    
+    public void llamarMagnitudDeTemblor() {
+        
+        float magnitud = demeNumero2("Deme categoria de sismo (ej.: 2.0");
+        
+        magnitudDeTemblor(magnitud);
+        
+    }
+    
+    public void magnitudDeTemblor(float magnitud) {
+        
+        if(magnitud > 2.0) {
+            if(magnitud >= 2.0 && magnitud < 3.9) {
+                System.out.println("Menor");
+            }else{
+                if(magnitud > 4.0 && magnitud < 4.9) {
+                    System.out.println("Ligero");
+                }else{
+                    if(magnitud > 5.0 && magnitud < 5.9) {
+                        System.out.println("Moderado");
+                    }else{
+                        if(magnitud > 6.0 && magnitud < 6.9) {
+                            System.out.println("Fuerte");
+                        }else{
+                            if(magnitud > 7.0 && magnitud < 7.9) {
+                                System.out.println("Mayor");
+                            }else{
+                                if(magnitud > 8.0 && magnitud < 8.9) {
+                                    System.out.println("Cataclismo");
+                                }else{
+                                    System.out.println("Legendario o apocaliptico");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }else{
+            System.out.println("Menos de 2.0: Micro");
+        }
+        
+    }
+    
+    
     
 }
