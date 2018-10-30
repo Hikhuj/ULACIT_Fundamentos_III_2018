@@ -143,8 +143,6 @@ public class Backend {
         
         int opc = 0;
         
-        
-        
         while(opc != 8){
             
             opc = demeNumero("Que desea hacer:\n"

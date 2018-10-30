@@ -16,6 +16,16 @@ public class TallerGeneral01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Pregunta3Tienda backUno = new Pregunta3Tienda();
+        Pregunta4Figuras backDos = new Pregunta4Figuras();
+        Pregunta5GanadorEleccion backTres = new Pregunta5GanadorEleccion();
+        
+        //backUno.actionPregunta3Tienda();
+        //backDos.piramideDeNumeros();
+        backTres.operacion();
+        
+        
     }
     
 }
