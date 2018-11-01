@@ -5,6 +5,8 @@
  */
 package tallergeneral01;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author rogerjoseulaterivera
@@ -14,17 +16,21 @@ public class TallerGeneral01 {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Pregunta3Tienda backUno = new Pregunta3Tienda();
-        Pregunta4Figuras backDos = new Pregunta4Figuras();
-        Pregunta5GanadorEleccion backTres = new Pregunta5GanadorEleccion();
+        Menu menu = new Menu();
         
         //backUno.actionPregunta3Tienda();
         //backDos.piramideDeNumeros();
-        backTres.operacion();
+        //backTres.operacion();
+        //backCuatro.calcularDivisibilidad();
+        //backCinco.operacion();
         
+        menu.menu();
+        menu.otrosEjercicios();
+
         
     }
     
