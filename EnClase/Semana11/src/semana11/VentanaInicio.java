@@ -13,7 +13,8 @@ public class VentanaInicio extends javax.swing.JFrame {
 
     // NOTAS:
     // No se borra el CONSTRUCTOR NI EL MAIN DE LLAS CLASES VENTANAS
-    // Para seleccionar la ventana que se quiere de incio, solo se va a MAIN del projecto, properties>Run>MainClass y ahi se selecciona que clase se quiere
+    // Para seleccionar la ventana que se quiere de incio, solo se va a MAIN del projecto, 
+    // properties>Run>MainClass y ahi se selecciona que clase se quiere
     
     /**
      * Creates new form VentanaInicio
